@@ -148,6 +148,7 @@ This document summarizes the **download size** and **files** fetched during the 
 | **Total**         | **≈ 15.57 GB** |
 
 ---
-Output for the Model, Dataset, Tokenizer and Config Files:
+
+Output for the Model, Dataset, Tokenizer and Config Files download:
 <img width="1313" height="364" alt="{2CAA47DA-8D33-45BD-91FD-176707628830}" src="https://github.com/user-attachments/assets/43559523-44f2-482f-a328-21ae0876c08d" />
 
