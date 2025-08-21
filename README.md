@@ -21,7 +21,7 @@ This repository provides a PyTorch and Hugging Face Transformers-based training 
 ## Requirements
 
 - Python 3.12+
-- PyTorch with ROCm support ([use the automated deployment script for ROCm 6.4.2 + Pytorch 2.9.0](https://github.com/JoergR75/ROCm-6.4.3-deployment-on-RDNA4/tree/main))
+- PyTorch with ROCm support ([use the automated deployment script for ROCm 6.4.3 + Pytorch 2.9.0](https://github.com/JoergR75/ROCm-6.4.3-deployment-on-RDNA4/tree/main))
 - Transformers
 - Datasets
 - Hugging Face Tokenizers
