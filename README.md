@@ -29,8 +29,8 @@ This repository provides a PyTorch and Hugging Face Transformers-based training 
 Install dependencies:
 
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.5
-pip install transformers datasets
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.5
+pip3 install transformers datasets
 ```
 
 # 🦎 Salamandra 7B Model – Download Summary
