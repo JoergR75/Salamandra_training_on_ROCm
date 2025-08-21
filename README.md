@@ -152,3 +152,54 @@ This document summarizes the **download size** and **files** fetched during the 
 Output for the Model, Dataset, Tokenizer and Config Files download:
 <img width="1313" height="364" alt="{2CAA47DA-8D33-45BD-91FD-176707628830}" src="https://github.com/user-attachments/assets/43559523-44f2-482f-a328-21ae0876c08d" />
 
+---
+
+Training example output for 2x INSTINCT MI210 (Threadripper, 32GB DDR4 RAM, 250GB WD blue SSD)
+```bash
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:06<00:00,  1.65s/it]
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 36718/36718 [00:02<00:00, 14072.03 examples/s]
+
+[INFO] Training started... Measuring TTFT, T/S, and TOS.
+
+  0%|                                                                                                                                    | 0/27540 [00:00<?, ?it/s][METRIC] TTFT: 3.023 sec
+  0%|                                                                                                                          | 9/27540 [00:11<8:15:17,  1.08s/it][METRIC] Step: 10 | T/S: 823.60 tokens/sec | TOS: 1.243 sec/step
+  0%|                                                                                                                         | 19/27540 [00:21<8:00:05,  1.05s/it][METRIC] Step: 20 | T/S: 894.00 tokens/sec | TOS: 1.145 sec/step
+  0%|▏                                                                                                                        | 29/27540 [00:32<7:59:27,  1.05s/it][METRIC] Step: 30 | T/S: 920.54 tokens/sec | TOS: 1.112 sec/step
+  0%|▏                                                                                                                        | 39/27540 [00:42<7:59:56,  1.05s/it][METRIC] Step: 40 | T/S: 934.50 tokens/sec | TOS: 1.096 sec/step
+  0%|▏                                                                                                                        | 49/27540 [00:53<7:59:06,  1.05s/it][METRIC] Step: 50 | T/S: 943.12 tokens/sec | TOS: 1.086 sec/step
+  0%|▎                                                                                                                        | 59/27540 [01:03<7:59:49,  1.05s/it][METRIC] Step: 60 | T/S: 948.85 tokens/sec | TOS: 1.079 sec/step
+  0%|▎                                                                                                                        | 69/27540 [01:14<7:58:52,  1.05s/it][METRIC] Step: 70 | T/S: 953.02 tokens/sec | TOS: 1.074 sec/step
+  0%|▎                                                                                                                        | 79/27540 [01:24<7:59:20,  1.05s/it][METRIC] Step: 80 | T/S: 956.16 tokens/sec | TOS: 1.071 sec/step
+  0%|▍                                                                                                                        | 89/27540 [01:35<7:57:25,  1.04s/it][METRIC] Step: 90 | T/S: 958.54 tokens/sec | TOS: 1.068 sec/step
+  0%|▍                                                                                                                        | 99/27540 [01:45<7:58:01,  1.05s/it][METRIC] Step: 100 | T/S: 960.44 tokens/sec | TOS: 1.066 sec/step
+  0%|▍                                                                                                                       | 109/27540 [01:56<7:58:36,  1.05s/it][METRIC] Step: 110 | T/S: 962.25 tokens/sec | TOS: 1.064 sec/step
+  0%|▌                                                                                                                       | 119/27540 [02:06<7:59:25,  1.05s/it][METRIC] Step: 120 | T/S: 963.38 tokens/sec | TOS: 1.063 sec/step
+  0%|▌                                                                                                                       | 129/27540 [02:16<7:59:57,  1.05s/it][METRIC] Step: 130 | T/S: 964.55 tokens/sec | TOS: 1.062 sec/step
+  1%|▌                                                                                                                       | 139/27540 [02:27<7:57:59,  1.05s/it][METRIC] Step: 140 | T/S: 965.53 tokens/sec | TOS: 1.061 sec/step
+  1%|▋                                                                                                                       | 149/27540 [02:37<7:56:31,  1.04s/it][METRIC] Step: 150 | T/S: 966.45 tokens/sec | TOS: 1.060 sec/step
+  1%|▋                                                                                                                       | 159/27540 [02:48<7:56:09,  1.04s/it][METRIC] Step: 160 | T/S: 967.20 tokens/sec | TOS: 1.059 sec/step
+  1%|▋                                                                                                                       | 169/27540 [02:58<7:57:54,  1.05s/it][METRIC] Step: 170 | T/S: 967.76 tokens/sec | TOS: 1.058 sec/step
+  1%|▊                                                                                                                       | 179/27540 [03:09<7:57:37,  1.05s/it][METRIC] Step: 180 | T/S: 968.30 tokens/sec | TOS: 1.058 sec/step
+[METRIC] Step: 190 | T/S: 968.80 tokens/sec | TOS: 1.057 sec/step
+  1%|▊                                                                                                                       | 199/27540 [03:30<7:55:35,  1.04s/it][METRIC] Step: 200 | T/S: 969.20 tokens/sec | TOS: 1.057 sec/step
+  1%|▉                                                                                                                       | 209/27540 [03:40<7:58:25,  1.05s/it][METRIC] Step: 210 | T/S: 969.50 tokens/sec | TOS: 1.056 sec/step
+  1%|▉                                                                                                                       | 219/27540 [03:51<7:57:40,  1.05s/it][METRIC] Step: 220 | T/S: 970.00 tokens/sec | TOS: 1.056 sec/step
+  1%|▉                                                                                                                       | 229/27540 [04:01<7:58:01,  1.05s/it][METRIC] Step: 230 | T/S: 970.27 tokens/sec | TOS: 1.055 sec/step
+  1%|█                                                                                                                       | 239/27540 [04:12<7:57:48,  1.05s/it][METRIC] Step: 240 | T/S: 970.47 tokens/sec | TOS: 1.055 sec/step
+  1%|█                                                                                                                       | 249/27540 [04:22<7:57:08,  1.05s/it][METRIC] Step: 250 | T/S: 970.82 tokens/sec | TOS: 1.055 sec/step
+  1%|█▏                                                                                                                      | 259/27540 [04:33<7:54:12,  1.04s/it][METRIC] Step: 260 | T/S: 971.11 tokens/sec | TOS: 1.054 sec/step
+  1%|█▏                                                                                                                      | 269/27540 [04:43<7:56:54,  1.05s/it][METRIC] Step: 270 | T/S: 971.33 tokens/sec | TOS: 1.054 sec/step
+  1%|█▏                                                                                                                      | 279/27540 [04:54<7:56:18,  1.05s/it][METRIC] Step: 280 | T/S: 971.51 tokens/sec | TOS: 1.054 sec/step
+  1%|█▎                                                                                                                      | 289/27540 [05:04<7:57:03,  1.05s/it][METRIC] Step: 290 | T/S: 971.75 tokens/sec | TOS: 1.054 sec/step
+  1%|█▎                                                                                                                      | 299/27540 [05:15<7:55:57,  1.05s/it][METRIC] Step: 300 | T/S: 971.92 tokens/sec | TOS: 1.054 sec/step
+  1%|█▎                                                                                                                      | 309/27540 [05:25<7:56:20,  1.05s/it][METRIC] Step: 310 | T/S: 972.15 tokens/sec | TOS: 1.053 sec/step
+  1%|█▍                                                                                                                      | 319/27540 [05:35<7:54:21,  1.05s/it][METRIC] Step: 320 | T/S: 972.33 tokens/sec | TOS: 1.053 sec/step
+  1%|█▍                                                                                                                      | 329/27540 [05:46<7:54:47,  1.05s/it][METRIC] Step: 330 | T/S: 972.48 tokens/sec | TOS: 1.053 sec/step
+  1%|█▍                                                                                                                      | 339/27540 [05:56<7:53:23,  1.04s/it][METRIC] Step: 340 | T/S: 972.60 tokens/sec | TOS: 1.053 sec/step
+  1%|█▌                                                                                                                      | 349/27540 [06:07<7:56:01,  1.05s/it][METRIC] Step: 350 | T/S: 972.78 tokens/sec | TOS: 1.053 sec/step
+  1%|█▌                                                                                                                      | 359/27540 [06:17<7:55:34,  1.05s/it][METRIC] Step: 360 | T/S: 972.85 tokens/sec | TOS: 1.053 sec/step
+  1%|█▌                                                                                                                      | 369/27540 [06:28<7:55:05,  1.05s/it][METRIC] Step: 370 | T/S: 972.96 tokens/sec | TOS: 1.052 sec/step
+  1%|█▋                                                                                                                      | 379/27540 [06:38<7:53:44,  1.05s/it][METRIC] Step: 380 | T/S: 973.08 tokens/sec | TOS: 1.052 sec/step
+  1%|█▋                                                                                                                      | 389/27540 [06:49<7:54:29,  1.05s/it][METRIC] Step: 390 | T/S: 973.23 tokens/sec | TOS: 1.052 sec/step
+  1%|█▋                                                                                                                      | 399/27540 [06:59<7:56:31,  1.05s/it]
+```
