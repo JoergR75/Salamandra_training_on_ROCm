@@ -39,11 +39,11 @@ pip3 install transformers datasets
 
 Download the python script:
 ```bash
-git clone https://github.com/yourusername/salamandra7b-rocm.git
+wget https://raw.githubusercontent.com/JoergR75/Salamandra_training_on_ROCm/refs/heads/main/salamandra_7b_training.py
 ```
 Run the training script:
 ```bash
-python3 train_salamandra7b.py
+python3 salamandra_7b_training.py
 ```
 
 The script will automatically:
