@@ -29,7 +29,7 @@ This repository provides a PyTorch and Hugging Face Transformers-based training 
 Install dependencies:
 
 ```bash
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.5
+pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/rocm6.4
 pip3 install transformers datasets
 ```
 
