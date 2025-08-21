@@ -20,8 +20,8 @@ This repository provides a PyTorch and Hugging Face Transformers-based training 
 
 ## Requirements
 
-- Python 3.10+
-- PyTorch with ROCm support
+- Python 3.12+
+- PyTorch with ROCm support (use the automated deployment script for ROCm 6.4.2 + Pytorch 2.9.0)
 - Transformers
 - Datasets
 - Hugging Face Tokenizers
@@ -33,7 +33,64 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 pip3 install transformers datasets
 ```
 
-# 🦎 Salamandra 7B Model – Download Summary
+---
+
+## Usage
+
+Download the python script:
+```bash
+git clone https://github.com/yourusername/salamandra7b-rocm.git
+```
+Run the training script:
+```bash
+python3 train_salamandra7b.py
+```
+
+The script will automatically:
+
+- Load the model and tokenizer
+- Tokenize the dataset
+- Train the model with BF16 precision
+- Log performance metrics during training
+
+---
+
+## Training Configuration
+
+- Model: BSC-LT/salamandra-7b-instruct
+- Dataset: wikitext-2-raw-v1
+- Sequence length: 256 tokens
+- Batch size: 1 per device
+- Gradient accumulation steps: 4
+- Learning rate: 5e-5
+- Epochs: 3
+- Precision: BF16 (ROCm-native)
+- Logging steps: every 50 steps
+- Checkpointing: every 500 steps, keeping 2 most recent
+
+## Performance Metrics
+
+The script logs key training metrics via a custom callback:
+
+- TTFT (Time to First Token): Time to complete first training step
+- T/S (Tokens per Second): Throughput
+- TOS (Time per Step): Average time per training step
+
+Example output:
+```bash
+[METRIC] TTFT: 3.512 sec
+[METRIC] Step: 10 | T/S: 12345.67 tokens/sec | TOS: 1.234 sec/step
+...
+===== Final Training Performance =====
+Total steps       : 100
+Total tokens      : 256000
+TTFT              : 3.512 sec
+Avg T/S           : 12500.23 tokens/sec
+Avg TOS           : 1.210 sec/step
+Total training    : 125.34 sec
+```
+
+## 🦎 Salamandra 7B Model – Download Summary
 
 This document summarizes the **download size** and **files** fetched during the setup of the **[BSC-LT/salamandra-7b-instruct](https://huggingface.co/BSC-LT/salamandra-7b-instruct)** model when running the training test script `salamandra_7B_training.py`.
 
@@ -91,6 +148,6 @@ This document summarizes the **download size** and **files** fetched during the 
 | **Total**         | **≈ 15.57 GB** |
 
 ---
-
+Example output:
 <img width="1313" height="364" alt="{2CAA47DA-8D33-45BD-91FD-176707628830}" src="https://github.com/user-attachments/assets/43559523-44f2-482f-a328-21ae0876c08d" />
 
