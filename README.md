@@ -1,28 +1,36 @@
-# 🦎 Fine-Tuning Salamandra-7B-Instruct on AMD ROCm
+# Salamandra-7B Training on ROCm
 
-This repository demonstrates how to **fine-tune** the [BSC-LT/salamandra-7b-instruct](https://huggingface.co/BSC-LT/salamandra-7b-instruct) model using **Hugging Face Transformers** on **AMD ROCm**-enabled GPUs.  
-It is optimized for **MI300X**, **MI250**, and **RDNA3/4** GPUs and serves as a **training test** to validate your ROCm setup.
-
----
-
-## 🚀 Overview
-
-- 🏎 **Optimized for ROCm** → automatically uses **bfloat16** (`bf16`) on supported AMD GPUs.
-- 🧠 Uses **Trainer API** for quick prototyping and testing.
-- 📦 Example dataset: **WikiText-2**.
-- ⚡ Compatible with multi-GPU environments (`device_map="auto"`).
-- 🛠 Includes ROCm-specific optimizations to avoid common issues.
+This repository provides a PyTorch and Hugging Face Transformers-based training setup for the **Salamandra-7B-Instruct** model on AMD GPUs using ROCm. It includes **bfloat16 training**, **gradient accumulation**, and **performance metrics logging** (TTFT, tokens/sec, time per step) during training.
 
 ---
 
-## 📌 Requirements
+## Features
 
-### 1. Install ROCm (AMD GPUs only)
+- Supports **Salamandra-7B-Instruct** model.
+- Fully compatible with **ROCm GPUs**.
+- Uses **bfloat16 (BF16)** precision for improved performance on AMD GPUs.
+- Gradient accumulation for large batch training on limited GPU memory.
+- Automatic dataset tokenization with `wikitext-2-raw-v1`.
+- Performance monitoring callback logging:
+  - TTFT (Time To First Token)
+  - T/S (Tokens per Second)
+  - TOS (Time per Step)
 
-For **Ubuntu 22.04 / 24.04**:
+---
+
+## Requirements
+
+- Python 3.10+
+- PyTorch with ROCm support
+- Transformers
+- Datasets
+- Hugging Face Tokenizers
+
+Install dependencies:
 
 ```bash
-sudo apt update && sudo apt install -y rocm-dev rocm-libs
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.5
+pip install transformers datasets
 ```
 
 # 🦎 Salamandra 7B Model – Download Summary
