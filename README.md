@@ -23,3 +23,7 @@ For **Ubuntu 22.04 / 24.04**:
 
 ```bash
 sudo apt update && sudo apt install -y rocm-dev rocm-libs
+```
+
+<img width="1313" height="364" alt="{2CAA47DA-8D33-45BD-91FD-176707628830}" src="https://github.com/user-attachments/assets/43559523-44f2-482f-a328-21ae0876c08d" />
+
