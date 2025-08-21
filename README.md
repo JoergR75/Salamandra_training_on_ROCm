@@ -1,4 +1,4 @@
-# Salamandra-7B Training on ROCm
+# 🦎 Salamandra-7B Training on ROCm
 
 This repository provides a PyTorch and Hugging Face Transformers-based training setup for the **Salamandra-7B-Instruct** model on AMD GPUs using ROCm. It includes **bfloat16 training**, **gradient accumulation**, and **performance metrics logging** (TTFT, tokens/sec, time per step) during training.
 
@@ -90,13 +90,13 @@ Avg TOS           : 1.210 sec/step
 Total training    : 125.34 sec
 ```
 
-## 🦎 Salamandra 7B Model – Download Summary
+## Salamandra 7B Model – Download Summary
 
 This document summarizes the **download size** and **files** fetched during the setup of the **[BSC-LT/salamandra-7b-instruct](https://huggingface.co/BSC-LT/salamandra-7b-instruct)** model when running the training test script `salamandra_7B_training.py`.
 
 ---
 
-## 📦 1. Tokenizer & Config Files
+## 1. Tokenizer & Config Files
 
 | File                     | Size    |
 |-------------------------|---------|
@@ -112,7 +112,7 @@ This document summarizes the **download size** and **files** fetched during the 
 
 ---
 
-## 🧠 2. Model Checkpoint Files (Sharded)
+## 2. Model Checkpoint Files (Sharded)
 
 | File                                   | Size    |
 |--------------------------------------|---------|
@@ -126,7 +126,7 @@ This document summarizes the **download size** and **files** fetched during the 
 
 ---
 
-## 📚 3. Dataset Files (WikiText-2)
+## 3. Dataset Files (WikiText-2)
 
 | File                                | Size    |
 |----------------------------------|---------|
@@ -138,7 +138,7 @@ This document summarizes the **download size** and **files** fetched during the 
 
 ---
 
-## 📊 4. Total Download Size
+## 4. Total Download Size
 
 | Category           | Size       |
 |-------------------|------------|
