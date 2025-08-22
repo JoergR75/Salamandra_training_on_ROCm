@@ -154,7 +154,7 @@ Output for the Model, Dataset, Tokenizer and Config Files download:
 
 ---
 
-Training example output for 2x INSTINCT MI210, gfx90a (AMD Ryzen Threadripper PRO 5955WX (16C/32T), 32GB DDR4 RAM, 250GB WD blue SSD)
+Training example output for 2x INSTINCT MI210, gfx90a (AMD Ryzen Threadripper PRO 5955WX (16C/32T), 32GB DDR4 2133 MT/s RAM, 250GB WD blue SSD)
 ```bash
 Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:06<00:00,  1.65s/it]
 Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 36718/36718 [00:02<00:00, 14072.03 examples/s]
