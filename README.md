@@ -79,13 +79,13 @@ The script logs key training metrics via a custom callback:
 Example output:
 ```bash
 [METRIC] TTFT: 3.512 sec
-[METRIC] Step: 10 | T/S: 12345.67 tokens/sec | TOS: 1.234 sec/step
+[METRIC] Step: 10 | T/S: 800.67 tokens/sec | TOS: 1.234 sec/step
 ...
 ===== Final Training Performance =====
 Total steps       : 100
 Total tokens      : 256000
 TTFT              : 3.512 sec
-Avg T/S           : 12500.23 tokens/sec
+Avg T/S           : 800.23 tokens/sec
 Avg TOS           : 1.210 sec/step
 Total training    : 125.34 sec
 ```
