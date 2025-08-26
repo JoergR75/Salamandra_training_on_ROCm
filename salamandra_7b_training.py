@@ -1,7 +1,6 @@
-# ROCm 6.4.3 + OCL 2.x + Pytorch 2.9.0 + Transformers Setup for Ubuntu 22.04.x and 24.04.x DT and Server build (! 20.04.x will not be supported anymore)
+# Salamandra-7B training on ROCm. It includes bfloat16 training, gradient accumulation, and performance measurements
 # ==========================================================================================================================================
-# This script will automatically install ROCm 6.4.3 + Pytroch 2.9.0 (nightly build) for Ubuntu 22.04.x and 24.04.x automatically downloading
-# the correct install script in non interactive mode.
+# This script will automatically install Salamandra dependencies and weights for teh 7B model. 
 #
 # Requirements
 # OS:                   Ubuntu Server 22.04.5 LTS (Jammy Jellyfish) or Ubuntu 24.04.2 LTS (Noble Numbat)
@@ -14,14 +13,7 @@
 # Driver:               https://repo.radeon.com/amdgpu-install/6.4.3/ubuntu/
 # Pytorch:              2.9.0.dev20250720+rocm6.4
 # Transformers:         4.55.2
-# Tools:                git (version control system used for tracking changes in computer files)
-#                       htop (monitoring - dynamic overview of running processes)
-#                       ncdu (NCurses Disk Usage utility, which provides a text-based interface for viewing disk usage)
-#                       cmake (CMake is an open-source, cross-platform family of tools designed to build, test, and package software)
-#                       libmsgpack-dev (development package for MessagePack, a binary serialization format. MessagePack is designed to be efficient in both size and speed, making it a popular choice for data interchange in performance-sensitive applications)
-#                       freeipmi-tools (read BMC version)
-#                       git-lfs (is an extension to Git that helps manage large files (such as datasets, images, videos, binaries, etc.) efficiently by replacing them with lightweight text pointers in your Git repository)
-#                       rocm-bandwidth-test (is a diagnostic utility which measures and validates memory bandwidth performance between the host (CPU) and GPU(s), as well as between multiple GPUs in a system)
+# Salamandra:           https://huggingface.co/BSC-LT/salamandra-7b
 #
 # Author: Joerg Roskowetz
 # Script process time: ~15 minutes (depending on system and internet configuration)
